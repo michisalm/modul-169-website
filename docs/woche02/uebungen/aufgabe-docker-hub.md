@@ -32,7 +32,7 @@ docker build . -t my-image
 
 Docker-Images können mit Tags versehen werden, um verschiedene Versionen oder
 Umgebungen zu kennzeichnen. Ein Tag hat das Format `repository:tag`. Wenn Sie
-kein Tag angeben, wird standardmäßig latest verwendet.
+kein Tag angeben, wird standardmässig latest verwendet.
 
 ```shell
 docker tag <lokales-image> <your-dockerhub-username>/<name-auf-dockerhub>:<tag>

@@ -16,7 +16,7 @@ niemals in der Cloud gespeichert werden. Zudem gibt es Anwendungen, die
 Media-Streaming ermöglichen, wie
 [_Jellyfin_](https://docs.linuxserver.io/images/docker-jellyfin/).
 
-Es ließen sich noch viele weitere Beispiele anführen, doch das würde den Rahmen
+Es liessen sich noch viele weitere Beispiele anführen, doch das würde den Rahmen
 sprengen.
 
 Auf den folgenden Links werden bekanntere "dockerisierte" Applikationen

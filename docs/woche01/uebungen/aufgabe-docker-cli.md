@@ -53,7 +53,7 @@ Der Befehl gibt die Container-ID des gestarteten Nginx-Containers zurück.
 <details>
   <summary>Lösung:</summary>
 
-Die Ausgabe zeigt eine Liste der laufenden Container, einschließlich ihrer IDs,
+Die Ausgabe zeigt eine Liste der laufenden Container, einschliesslich ihrer IDs,
 Namen, Status und Ports.
 
 </details>
@@ -95,7 +95,7 @@ erfolgreich heruntergeladen wurde.
 <details>
   <summary>Lösung:</summary>
 
-Die Ausgabe zeigt eine Liste aller lokal gespeicherten Images, einschließlich
+Die Ausgabe zeigt eine Liste aller lokal gespeicherten Images, einschliesslich
 ihrer Repositories, Tags und IDs.
 
 </details>

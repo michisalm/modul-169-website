@@ -48,7 +48,7 @@ werden können:
   müssen.
 - **IPvlan-Netzwerk**: IPvlan ist eine erweiterte Netzwerkoption, die es
   Containern ermöglicht, direkt im Netzwerk des Hosts zu kommunizieren, während
-  sie gleichzeitig eine eigene IP-Adresse erhalten. IPVlan kann in zwei Modi
+  sie gleichzeitig eine eigene IP-Adresse erhalten. IPvlan kann in zwei Modi
   betrieben werden:
   - **L2-Modus**: Container können sich wie physische Geräte im Netzwerk
     verhalten und direkt mit anderen Geräten im gleichen Netzwerk kommunizieren.
@@ -59,19 +59,19 @@ werden können:
 
 ## Kommunikation zwischen Containern
 
-Container, die im selben Netzwerk sind, können sich über ihre Namen, ihrer IP
-Adresse, oder die Container ID ansprechen. Zum Beispiel, wenn Sie zwei Container
-mit den Namen web und db haben, kann der web-Container den db-Container einfach
-über den Namen db erreichen.
+Container, die im selben Netzwerk sind, können sich über ihre Namen, ihrer
+IP-Adresse, oder die Container ID ansprechen. Zum Beispiel, wenn Sie zwei
+Container mit den Namen web und DB haben, kann der web-Container den
+DB-Container einfach über den Namen DB erreichen.
 
 ## Portmapping in Docker
 
 Portmapping ist ein zentraler Aspekt des Docker Networking, der es ermöglicht,
-Container-Dienste für die Außenwelt zugänglich zu machen. Wenn ein Container in
-einem Bridge-Netzwerk läuft, ist er standardmäßig nicht direkt von außen
+Container-Dienste für die Aussenwelt zugänglich zu machen. Wenn ein Container in
+einem Bridge-Netzwerk läuft, ist er standardmässig nicht direkt von aussen
 erreichbar. Um dies zu ändern, können spezifische Ports des Containers auf Ports
 des Hosts gemappt werden. Dies geschieht durch die Angabe der Option -p beim
-Starten eines Containers, gefolgt von der Syntax HostPort:ContainerPort.
+Starten eines Containers, gefolgt von der Syntax `Host-Port:Container-Port`.
 
 Beispielsweise könnte der Befehl docker run -p 8080:80 einen Webserver im
 Container, der auf Port 80 lauscht, auf Port 8080 des Hosts verfügbar machen.
@@ -79,8 +79,8 @@ Dadurch können externe Clients über `http://<Host-IP>:8080` auf den Dienst
 zugreifen.
 
 Das Portmapping ist besonders wichtig, um sicherzustellen, dass Container, die
-in isolierten Umgebungen laufen, dennoch mit der Außenwelt kommunizieren können,
-ohne die Sicherheit und Isolation der Container zu gefährden. Es ist ein
+in isolierten Umgebungen laufen, dennoch mit der Aussenwelt kommunizieren
+können, ohne die Sicherheit und Isolation der Container zu gefährden. Es ist ein
 einfaches, aber effektives Mittel, um die Funktionalität von Docker-Containern
 zu erweitern und ihre Dienste für Benutzer und andere Systeme zugänglich zu
 machen.
@@ -97,6 +97,6 @@ Netzwerkisolierung und Zugriffskontrolle.
 Docker Networking ist ein wesentlicher Bestandteil der Containerisierung. Es
 ermöglicht die Kommunikation zwischen Containern und der Aussenwelt und bietet
 verschiedene Netzwerkmodi, um unterschiedlichen Anforderungen gerecht zu werden.
-Ein gutes Verständnis von Docker Networking, einschließlich IPVlan, ist
-entscheidend für die effektive Nutzung von Docker in der Softwareentwicklung-
-und Bereitstellung.
+Ein gutes Verständnis von Docker Networking, einschliesslich IPvlan, ist
+entscheidend für die effektive Nutzung von Docker in der Softwareentwicklung und
+Bereitstellung.

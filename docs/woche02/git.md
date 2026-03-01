@@ -38,7 +38,7 @@ In der Entwicklung ist es wichtig, Änderungen am Quellcode einer Software
 rigoros zu verwalten. Ohne diese kann unmöglich sichergestellt werden, dass
 Entwicklungsteams konsistent und zuverlässig arbeiten können. Ein fein
 abgestimmtes Änderungsmanagement kann es auch einfacher machen, die Ursache
-eines Problems zu identifizieren. Außerdem verringert es das Risiko von
+eines Problems zu identifizieren. Ausserdem verringert es das Risiko von
 Konflikten und das Überschreiben von Dateien. In der Tat erleichtert und
 rationalisiert Git die Versionsverwaltung von Software genau zu diesem Zweck.
 
@@ -65,7 +65,7 @@ Mit diesem Verlauf kannst du nicht nur die Entwicklung des Projekts überwachen,
 sondern auch zurückgehen und Teile der Änderung rückgängig machen oder auch nur
 einen Teil der Änderungen von einem Branch zu einem anderen übertragen. Diese
 Funktion ist daher entscheidend, um die Transparenz, Konsistenz und Qualität des
-Quellcodes eines Projekts in Git zu wahren. Außerdem wird dadurch die
+Quellcodes eines Projekts in Git zu wahren. Ausserdem wird dadurch die
 Zusammenarbeit im Entwicklungsteam gefördert und die betriebliche Effizienz bei
 der Problembehebung gesteigert.
 
@@ -78,7 +78,7 @@ Dank seiner dezentralen Struktur ermöglicht es Git den Teams, gleichzeitig am
 selben Projekt zu arbeiten. Jedes Teammitglied hat seine eigene Kopie des
 Projekts, in der Änderungen versioniert werden können. Dadurch können sie
 autonom an bestimmten Funktionen arbeiten, ohne dass es zu Konflikten oder
-Überschreibungen kommt. Dieser Ansatz bietet den Entwickler(inne)n große
+Überschreibungen kommt. Dieser Ansatz bietet den Entwickler(inne)n grosse
 Flexibilität, denn so können sie verschiedene Ideen ausarbeiten oder mit neuen
 Funktionen experimentieren, ohne die Arbeit ihrer Kolleg(inn)en zu stören.
 
@@ -105,7 +105,7 @@ Versionen reduzieren und die kontinuierliche Integration der entwickelten
 Funktionen sicherstellen.
 
 Mit diesen beiden Funktionen können Teams kontinuierlich und im Sinne der
-Agile-Methodik Projekte entwickeln und regelmäßig neue Codeversionen
+Agile-Methodik Projekte entwickeln und regelmässig neue Codeversionen
 bereitstellen. Diese Vorgehensweise erleichtert das Change Management deutlich
 und senkt gleichzeitig das Fehlerrisiko.
 
@@ -116,7 +116,7 @@ Entwicklungsteams bietet:
 
     Dezentralisierte Versionsverwaltung: Mit Git haben alle Entwickler(innen) eine vollständige Kopie des Projektverlaufs und können dadurch unabhängig arbeiten.
     Ein Tool für Sicherheit: Anders als andere Tools zur Versionskontrolle wurde Git mit dem Gedanken entwickelt, die Integrität aller Elemente im Repository mit einem kryptografischen Secure Hash Algorithm (aktuell SHA1 und SHA-256) sicherzustellen. Dieser Algorithmus soll den Code und den Verlauf des Projekts vor Änderungen – egal, ob böswillig oder nicht – schützen. Darüber hinaus kann jeder Commit (also jede Erstellung einer neuen Version) automatisch signiert werden (GPG), um die Nachvollziehbarkeit zu gewährleisten. Dies macht Git zu einem besonders sicheren Tool, das die Integrität und Authentizität deines Quellcodes und seines Verlaufs sicherstellt.
-    Ein schnelles und effektives Tool: Das Git-Tool wurde entwickelt, um die Effizienz bei der Entwicklung zu maximieren. Dank seiner Geschwindigkeit können Entwickler(innen) komplexe Vorgänge wie Commits, Branching und das Zusammenführen äußerst rasch durchführen, und das sogar in großen Codebases. Es sorgt auch für einen minimalen Fingerabdruck auf der Festplatte und beim Netzwerkaustausch. Diese Effizienz führt zu kürzeren Reaktionszeiten bei Backups, Beratungen und Änderungen am Projektverlauf.
+    Ein schnelles und effektives Tool: Das Git-Tool wurde entwickelt, um die Effizienz bei der Entwicklung zu maximieren. Dank seiner Geschwindigkeit können Entwickler(innen) komplexe Vorgänge wie Commits, Branching und das Zusammenführen äusserst rasch durchführen, und das sogar in grossen Codebases. Es sorgt auch für einen minimalen Fingerabdruck auf der Festplatte und beim Netzwerkaustausch. Diese Effizienz führt zu kürzeren Reaktionszeiten bei Backups, Beratungen und Änderungen am Projektverlauf.
     Mehr Flexibilität beim Arbeiten: Git unterstützt eine Vielzahl an Entwicklungs-Workflows. Egal, ob du zentralisierte Entwicklungsmodelle oder eher einen linearen Ansatz bevorzugst: Git lässt sich einfach anpassen. Diese Fähigkeit, verschiedene Workflows zu verwalten, bietet Teams zahlreiche Optionen für ihre Arbeitsweise.
     Einfache Integration: Git zeichnet sich dadurch aus, dass es sich in eine ganze Reihe bestehender Entwicklungstools und -plattformen integrieren lässt. Durch diese breite Kompatibilität können Teams die besten DevSecOps-Tools und -Praktiken nutzen und dadurch ihre Projekte effizienter verwalten.
-    Ein weithin anerkanntes Open-Source-Projekt: Ein weiterer bedeutender Vorteil von Git ist, dass es ein Open-Source-Projekt ist und von einer dynamischen, engagierten Community unterstützt wird, wodurch die kontinuierliche Weiterentwicklung sichergestellt wird. Durch diese aktive Beteiligung von Einzelpersonen und Unternehmen in der Git-Community kommen im Rahmen kontinuierlicher Updates regelmäßig neue Funktionen und Verbesserungen hinzu.
+    Ein weithin anerkanntes Open-Source-Projekt: Ein weiterer bedeutender Vorteil von Git ist, dass es ein Open-Source-Projekt ist und von einer dynamischen, engagierten Community unterstützt wird, wodurch die kontinuierliche Weiterentwicklung sichergestellt wird. Durch diese aktive Beteiligung von Einzelpersonen und Unternehmen in der Git-Community kommen im Rahmen kontinuierlicher Updates regelmässig neue Funktionen und Verbesserungen hinzu.

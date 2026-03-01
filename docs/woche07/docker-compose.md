@@ -57,8 +57,8 @@ Produktionsumgebung skalieren möchten.
 Docker Compose kann auch in Verbindung mit Docker Swarm verwendet werden, um
 Container-Orchestrierung zu ermöglichen. Dies bedeutet, dass Sie Ihre
 Compose-Datei verwenden können, um Anwendungen in einem Cluster von Docker-Hosts
-zu verwalten, was die Bereitstellung und Verwaltung von Anwendungen in großem
-Maßstab erleichtert.
+zu verwalten, was die Bereitstellung und Verwaltung von Anwendungen in grossem
+Massstab erleichtert.
 
 ### 7. Einfache Verwaltung von Umgebungsvariablen
 

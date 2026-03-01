@@ -3,12 +3,12 @@
 In Docker Compose können Sie mit
 [Bind Mounts](/docs/lektionen/woche03/docker-volume.md#bind-mounts)
 Verzeichnisse von Ihrem Host-System in Container einbinden. Manchmal möchten Sie
-jedoch bestimmte Ordner im Container ausschließen, während Sie andere einbinden.
+jedoch bestimmte Ordner im Container ausschliessen, während Sie andere einbinden.
 Hier erfahren Sie, wie Sie dies erreichen können.
 
 ## Ausschluss von Ordnern
 
-Um einen Ordner beim Bind Mount auszuschließen, können Sie mehrere Mounts in
+Um einen Ordner beim Bind Mount auszuschliessen, können Sie mehrere Mounts in
 Ihrer docker-compose.yml-Datei definieren. Wird ein Volume mount als Path
 definiert, ohne, dass ein Host pfad angegeben wird (das ":" fehlt), wird ein
 Pfad im container mit sich selbst referenziert. Dies hat den Effekt, dass dieser

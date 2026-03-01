@@ -211,7 +211,7 @@ CMD ["app.py"]
 ```
 
 In diesem Beispiel wird ein Python-Image als Basis verwendet, Abhängigkeiten
-werden installiert, und schließlich wird die Anwendung gestartet.
+werden installiert, und schliesslich wird die Anwendung gestartet.
 
 ### CMD vs. ENTRYPOINT
 
@@ -233,7 +233,7 @@ Beispiel:
 CMD ["app.py"]
 ```
 
-Wenn der Container gestartet wird, wird standardmäßig app.py ausgeführt, aber
+Wenn der Container gestartet wird, wird standardmässig app.py ausgeführt, aber
 der Benutzer kann dies durch Angabe eines anderen Befehls beim Starten des
 Containers überschreiben.
 
@@ -416,14 +416,14 @@ Sie Ihre Docker-Images schneller und effektiver erstellen.
 
 Multistage Builds in *Dockerfiles* sind eine Technik, die es ermöglicht, mehrere
 Schritte beim Erstellen eines Docker-Images zu kombinieren. Dadurch kann die
-Größe des endgültigen Images reduziert und die Build-Zeit optimiert werden. Hier
+Grösse des endgültigen Images reduziert und die Build-Zeit optimiert werden. Hier
 ist eine einfache Erklärung mit Beispielen:
 
 ### Was sind Multistage Builds?
 
 Stellen Sie sich vor, Sie möchten eine Anwendung bauen, die aus mehreren Teilen
 besteht. Normalerweise würden Sie alle Abhängigkeiten und Tools in ein einziges
-Docker-Image packen. Das kann jedoch dazu führen, dass das Image sehr groß wird,
+Docker-Image packen. Das kann jedoch dazu führen, dass das Image sehr gross wird,
 weil viele Dinge, die nur während des Builds benötigt werden, auch im
 endgültigen Image landen.
 
@@ -469,7 +469,7 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 ### Vorteile von Multistage Builds:
 
 - **Kleinere Images**: Nur die benötigten Dateien werden ins finale Image
-  kopiert, was die Größe reduziert.
+  kopiert, was die Grösse reduziert.
 - **Schnelleres Deployment**: Kleinere Images laden schneller.
 - **Sauberer Code**: Sie können verschiedene Umgebungen (Build, Test,
   Produktion) klarer trennen.

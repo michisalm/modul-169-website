@@ -23,8 +23,8 @@ erstellen, was das Erstellen und Teilen von Images schnell und effizient macht.
 
 **Hinweis**: Docker hat Container nicht erfunden. Zum Beispiel wurden
 LXC-Container ([https://linuxcontainers.org/](https://linuxcontainers.org/))
-bereits 2008 implementiert, fünf Jahre bevor Docker auf den Markt kam. Das heißt
-aber nicht, dass Docker keine großen Fortschritte in der Benutzerfreundlichkeit
+bereits 2008 implementiert, fünf Jahre bevor Docker auf den Markt kam. Das heisst
+aber nicht, dass Docker keine grossen Fortschritte in der Benutzerfreundlichkeit
 gemacht hat, was dazu beigetragen hat, dass Container-Technologien eine breite
 Akzeptanz gefunden haben und Docker nach wie vor eine der beliebtesten
 Plattformen für Containerisierung bleibt.
@@ -50,14 +50,14 @@ beispielsweise folgendes nutzen darf:
 
 ## Namespaces
 
-Ein Namespace umschließt eine globale Systemressource in einer Abstraktion, die
+Ein Namespace umschliesst eine globale Systemressource in einer Abstraktion, die
 den Prozessen innerhalb des Namespace erscheinen lässt, als hätten sie ihre
 eigene isolierte Instanz der globalen Ressource.
 
 Änderungen an der globalen Ressource sind für andere Prozesse, die Mitglieder
 des Namespace sind, sichtbar, aber unsichtbar für andere Prozesse.
 
-Mit Namespaces kann eine Container-Laufzeitumgebung Prozesse außerhalb des
+Mit Namespaces kann eine Container-Laufzeitumgebung Prozesse ausserhalb des
 Containers innerhalb des Containers unsichtbar machen oder den Benutzer im
 Container einem anderen Benutzer auf dem Host zuordnen (unter anderem).
 
@@ -98,7 +98,7 @@ bedienende CLI-Anwendung mit zusätzlichem Desktop-GUI verpackt werden.
 
 ## Zusätzliche Ressourcen
 
-Für eine tiefere Erkundung dieser Themen, schauen Sie sich diesen großartigen
+Für eine tiefere Erkundung dieser Themen, schauen Sie sich diesen grossartigen
 Live-Stream von Joshua Jebaraj an, der cgroups und namespaces erkundet:
 
 <div className="grid"><div>

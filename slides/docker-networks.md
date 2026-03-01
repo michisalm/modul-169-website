@@ -94,6 +94,20 @@ Die Konzentration der Mitschüler muss gewährleistet sein.
 
 ---
 
+> Achte auf deine Gedanken, denn sie werden Worte.
+>
+> Achte auf deine Worte, denn sie werden Handlungen.
+>
+> Achte auf deine Handlungen, denn sie werden Gewohnheiten.
+>
+> Achte auf deine Gewohnheiten, denn sie werden dein Charakter.
+>
+> Achte auf deinen Charakter, denn er wird dein Schicksal.
+>
+> -- Talmud
+
+---
+
 # Prüfung
 
 ---
@@ -165,9 +179,43 @@ docker network rm my-network
 
 ---
 
+# 📖 Auftrag
+
+::: columns l60
+
+Lesen Sie das Kapitel "Docker Network"
+
+- [Docker Network](https://herrhodel.github.io/modul-169-website/docs/woche05/docker-network)
+
+::: split
+
+- :dna: Einzelarbeit
+- :clock1: 15 Min
+
+:::
+
+---
+
+# 📝 Auftrag
+
+::: columns l60
+
+Lesen und Machen Sie die Übung 6: Netzwerk Grundlagen
+
+- [Übung 6: Netzwerk Grundlagen](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-network-06)
+
+::: split
+
+- :dna: Einzelarbeit
+- :clock1: 20 Min
+
+:::
+
+---
+
 # Netzwerk Diagramme
 
-1. Es gibt keinen wirklichen Standard.
+1. Es gibt **keinen wirklichen Standard**.
 
 2. Es gibt Icons von Cisco, AWS, ...
 3. **Physikalische** Diagramme: beschreiben **Hardware**.
@@ -175,11 +223,33 @@ docker network rm my-network
 
 ---
 
+# Legende _vom Unterricht_
+
+::: columns
+
+## Logisch
+
+![inline height:400px](./img/network-legende-logisch.svg)
+
+::: split
+
+## Physikalisch
+
+![inline fit](./img/network-legende-physikalisch.svg)
+
+:::
+
+---
+
+<!-- _class: center -->
+
 # Physikalische Netzwerk Diagramme
 
 ![inline height:500px](./img/network-physikalisch.svg)
 
 ---
+
+<!-- _class: center -->
 
 # Logische Netzwerk Diagramme
 
@@ -187,22 +257,37 @@ docker network rm my-network
 
 ---
 
-# Legende
+# 📝 Auftrag
 
-::: columns
+::: columns l60
 
-## Logisch
+Lesen und Machen Sie die Übungen 7-9
 
-Nicht genau definiert, sollte aber konsistent sein.
-
-![inline fit](./img/network-legende-logisch.svg)
+- [Übung 7: Docker Networking und DNS](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-07)
+- [Übung 8: MariaDB und phpMyAdmin im Docker-Netzwerk](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-08)
+- [Übung 9: Diagramme](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-09)
 
 ::: split
 
-## Physikalisch
-
-Cisco gilt quasi als Standard
-
-![inline fit](./img/network-legende-physikalisch.svg)
+- :dna: Einzelarbeit
+- :clock1: bis ans Ende des Unterrichts
 
 :::
+
+---
+
+> Als die Nazis die Kommunisten holten, habe ich geschwiegen;
+>
+> - ich war ja kein Kommunist.
+>
+> Als sie die Gewerkschaftler holten, habe ich geschwiegen,
+>
+> - ich war ja kein Gewerkschaftler.
+>
+> Als sie die Juden holten, habe ich geschwiegen,
+>
+> - ich war ja kein Jude.
+>
+> Als sie mich holten, gab es keinen mehr, der protestieren konnte.
+>
+> – Martin Niemöller

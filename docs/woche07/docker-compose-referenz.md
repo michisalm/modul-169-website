@@ -102,7 +102,7 @@ secrets:
   - [**environment**](#23-servicesenvironment): Umgebungsvariablen werden für
     die Konfiguration der Services gesetzt.
   - [**healthcheck**](#26-serviceshealthcheck): Ein Gesundheitscheck für den
-    web-Service, um sicherzustellen, dass er ordnungsgemäß funktioniert.
+    web-Service, um sicherzustellen, dass er ordnungsgemäss funktioniert.
   - [**labels**](#28-serviceslabels): Metadaten für den web-Service.
   - [**ports**](#24-servicesports): Der web-Service leitet Port 80 des Hosts auf
     Port 80 des Containers weiter.
@@ -111,7 +111,7 @@ secrets:
   - [**volumes**](#25-servicesvolumes): Beide Services verwenden Volumes für die
     Datenpersistenz.
   - [**deploy**](#27-servicesdeploy): Bereitstellungsoptionen für den
-    db-Service, einschließlich Ressourcenlimits.
+    db-Service, einschliesslich Ressourcenlimits.
 - [**networks**](#3-networks): Definiert ein benutzerdefiniertes Netzwerk.
 - [**configs**](#5-configs): Definiert eine Konfiguration, die in den Services
   verwendet werden kann.
@@ -225,7 +225,7 @@ services:
 
 Definiert die Portweiterleitungen zwischen dem Host und dem Container. Dies
 ermöglicht den Zugriff auf die Dienste, die in den Containern laufen, von
-außerhalb des Docker-Netzwerks.
+ausserhalb des Docker-Netzwerks.
 
 Beispiel:
 
@@ -285,7 +285,7 @@ services:
 #### 2.6. services.healthcheck
 
 Definiert einen Gesundheitscheck für einen Service, um sicherzustellen, dass der
-Container ordnungsgemäß funktioniert. Docker kann dann entscheiden, ob der
+Container ordnungsgemäss funktioniert. Docker kann dann entscheiden, ob der
 Container neu gestartet werden soll, wenn der Gesundheitscheck fehlschlägt.
 
 Beispiel:

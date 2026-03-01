@@ -47,7 +47,7 @@ services:
 
 ## 3. Automatisches Laden der .env-Datei
 
-Docker Compose sucht standardmäßig nach einer .env-Datei im gleichen Verzeichnis
+Docker Compose sucht standardmässig nach einer .env-Datei im gleichen Verzeichnis
 wie die docker-compose.yml-Datei. Wenn die Datei vorhanden ist, werden die darin
 definierten Variablen automatisch geladen und stehen in der docker-compose.yml
 zur Verfügung.
