@@ -6,14 +6,13 @@ sidebar_position: 1
 
 ## Ziel
 
-6. Stellt die Services in der definierten Umgebung reproduzierbar bereit.
+- 2. Dokumentiert den logischen und physischen Aufbau der Umgebung in einem
+     Netzwerkschema mit servicespezifischen Angaben.
+- 8. Versteht anhand der Dokumentation die Funktionalität der Services und
+     unterstützt bei der Fehlersuche.
 
 ## Präsentation
 
 ## Themen
 
 <DocCardList />
-
-## Links
-
-- https://github.com/pmsipilot/docker-compose-viz

@@ -415,6 +415,18 @@ services:
 
 - https://docs.docker.com/reference/compose-file/secrets/
 
+## Visualisierung
+
+Diese Befehle im Ordner der `docker-compose.yml` Datei ausführen:
+
+```bash title="Linux/Mac: bash"
+docker run --rm -it --name dcv -v $(pwd):/input pmsipilot/docker-compose-viz render -m image docker-compose.yml
+```
+
+```powershell title="Windows: Powershell"
+docker run --rm -it --name dcv -v ${pwd}:/input pmsipilot/docker-compose-viz render -m image docker-compose.yml
+```
+
 ## Befehle
 
 Diese Befehle sind die grundlegenden Werkzeuge, um mit Docker Compose zu
