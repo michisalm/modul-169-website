@@ -2,13 +2,13 @@
 marp: true
 theme: bbzbl
 paginate: true
-header: Modul 169 - Docker Compose
+header: Modul 169 - Docker Compose 2
 footer: BBZBL / Lukas Hodel / Services mit Containern bereitstellen
 ---
 
 <!-- _class: big center -->
 
-# Docker Compose
+# Docker Compose 2
 
 ## Modul 169
 
@@ -18,14 +18,13 @@ footer: BBZBL / Lukas Hodel / Services mit Containern bereitstellen
 
 :::columns
 
-- **Prüfungsresultate**
 - **Repetition**
-- **Übungen zu Docker Network**
+- **Übungen zu Docker Compose (Woche 07)**
 
 ::: split
 
 - **Docker Compose**
-- **Übungen**<br/> _zu Docker Compose_
+- **Übungen**<br/> _zu Docker Compose_ (Woche 06)
 
 :::
 
@@ -95,53 +94,17 @@ Die Konzentration der Mitschüler muss gewährleistet sein.
 
 ---
 
-# Prüfungsresultate
-
-- Ihr könnt diese individuell durch den Unterricht bei mir anschauen kommen.
-
----
-
-<!-- _class: big -->
-
-## Repetition
-
-# Was ist ein Docker Netzwerk?
-
----
-
-<!-- _class: big -->
-
-## Repetition
-
-# Was ist der Unterschied vom Type Bridge zu Host?
-
----
-
-<!-- _class: big -->
-
-## Repetition
-
-# Was passiert, wenn ein Container in mehreren Netzwerken ist?
-
----
-
-<!-- _class: big -->
-
-## Repetition
-
-# Wie können mehrere Netzwerke zur Sicherheit beitragen?
-
----
-
 # 📝 Auftrag
 
 ::: columns l60
 
-Lesen und Machen Sie die Übungen 7-9
+Lesen und Machen Sie die Übungen von Dieser Woche
 
-- [Übung 7: Docker Networking und DNS](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-07)
-- [Übung 8: MariaDB und phpMyAdmin im Docker-Netzwerk](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-08)
-- [Übung 9: Diagramme](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-09)
+- [Starten von Images](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-00)
+- [Bind Mounts](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-01)
+- [Volumen](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-02)
+- [Netzwerk](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-03)
+- [Diagramm](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-04)
 
 ::: split
 
@@ -152,32 +115,24 @@ Lesen und Machen Sie die Übungen 7-9
 
 ---
 
-<!-- _class: center big -->
-
-# Docker Compose
-
----
-
-# 📖 Auftrag
+# 📝 Auftrag
 
 ::: columns l60
 
-Lesen Sie das Kapitel "Docker Compose"
+Lesen und Machen Sie die Übungen von **letzer** Woche
 
-- [Docker Compose](https://herrhodel.github.io/modul-169-website/docs/woche06/docker-compose)
+- [Starten von Images](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-00)
+- [Bind Mounts](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-01)
+- [Volumen](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-02)
+- [Netzwerk](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-03)
+- [Diagramm](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-04)
 
 ::: split
 
 - :dna: Einzelarbeit
-- :clock1: 15 Min
+- :clock1: bis zur grossen Pause
 
 :::
-
----
-
-# Demo Aufgabe "start"
-
-- [Aufgabe Start](https://herrhodel.github.io/modul-169-website/docs/woche06/aufgaben/aufgabe-compose-00)
 
 ---
 
@@ -185,7 +140,9 @@ Lesen Sie das Kapitel "Docker Compose"
 
 ::: columns l60
 
-Lesen und Machen Sie die Übungen 2-9.
+Lesen und Machen Sie die Übungen 2-9 der Woche 06.
+
+- [Docker Compose Aufgaben Woche 06](https://herrhodel.github.io/modul-169-website/docs/woche06/aufgaben/)
 
 - Erstellen Sie je auch eine Visualisierung vom docker-compose File
 

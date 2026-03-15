@@ -13,6 +13,8 @@ sidebar_position: 1
 
 ## Präsentation
 
+<Slide name="docker-compose-2" />
+
 ## Themen
 
 <DocCardList />

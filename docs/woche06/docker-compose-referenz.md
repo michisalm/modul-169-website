@@ -46,6 +46,8 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
+    networks:
+      - my-network
     labels:
       com.example.description: "Webserver"
     ports:
@@ -65,6 +67,14 @@ services:
         limits:
           cpus: "0.1"
           memory: 512M
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready", "-d", "db_prod"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 80s
+    networks:
+      - my-network
     secrets:
       - my_secret
     volumes:
