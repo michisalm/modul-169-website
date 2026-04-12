@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Docker Network - Referenz
 
-### Netzwerke anzeigen
+### Netzwerke anzeigen und inspizieren (inspect)
 
 Liste aller Netzwerke anzeigen
 
