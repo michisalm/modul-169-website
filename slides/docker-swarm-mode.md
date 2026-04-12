@@ -434,6 +434,7 @@ Lesen Sie "Docker Security" von der Woche 8
 
 # 📝 Auftrag
 
+
 ::: columns l60
 
 Gehen Sie durch alle `Dockerfile` Aufgaben durch und versuchen Sie mit KI Ihrer

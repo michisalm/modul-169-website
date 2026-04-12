@@ -48,6 +48,12 @@ docker run --name <container_name> <image_name>
 docker run --name mein-ubuntu ubuntu
 ```
 
+:::info
+
+- Der Container Name ist automatisch auch der **DNS Name** vom Container.
+
+:::
+
 #### Erstellen eines Containers aus einem Image mit spezifischem Containernamen, **im Hintergrund**.
 
 ```bash
@@ -66,6 +72,16 @@ docker run -p <host_port>:<container_port> -d --name <container_name> <image_nam
 
 ```bash title="Beispiel"
 docker run -p 8080:80 -d --name mein-ubuntu ubuntu
+```
+
+#### Erstellen eines, beim Stoppen selbstlöschenden Containers, mit spezifischem Containernamen, im interactive mode.
+
+```bash
+docker run --rm -it --name <container_name> <image_name>
+```
+
+```bash title="Beispiel"
+docker run --rm -it --name meine-busybox busybox:1.37.0
 ```
 
 ### docker start
@@ -162,17 +178,21 @@ docker images
 
 ### docker build
 
-Ein Image aus einem Dockerfile im aktuellen Ordner erstellen.
+Ein Image aus einem Dockerfile im aktuellen Ordner erstellen (Bauen).
 
 ```bash
-docker build -t <image_name> .
+docker build -t <image_name>:<image_tag> .
 ```
 
 Ein Image aus einem Dockerfile im aktuellen Ordner **ohne Cache** erstellen.
 Dies kann nützlich sein, wenn Probleme auftreten.
 
 ```bash
-docker build -t <image_name> . --no-cache
+docker build -t <image_name>:<image_tag> . --no-cache
+```
+
+```bash title="Beispiel"
+docker build -t myimage:v1
 ```
 
 ### docker tag

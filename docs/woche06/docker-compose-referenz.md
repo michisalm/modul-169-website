@@ -37,6 +37,7 @@ services:
     build:
       context: ./web
       dockerfile: Dockerfile
+    container_name: frontend
     depends_on:
       - db
     environment:
@@ -57,6 +58,7 @@ services:
       - web-data:/usr/share/nginx/html
   db:
     image: postgres
+    container_name: database
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
@@ -105,23 +107,25 @@ secrets:
   Compose-Syntax an.
 - [**services**](#2-services): Definiert zwei Services: web (Nginx) und db
   (Postgres).
-  - [**build**](#21-servicesbuild): Der web-Service wird aus einem Dockerfile im
+  - [**build**](#servicesbuild): Der web-Service wird aus einem Dockerfile im
     Verzeichnis ./web gebaut.
-  - [**depends_on**](#22-servicesdependson): Der web-Service hängt vom
-    db-Service ab.
-  - [**environment**](#23-servicesenvironment): Umgebungsvariablen werden für
-    die Konfiguration der Services gesetzt.
-  - [**healthcheck**](#26-serviceshealthcheck): Ein Gesundheitscheck für den
+  - [**container_name**](#servicescontainername): Der Container erhält den Namen
+    "frontend". Dieser ist sogleich auch der DNS Name.
+  - [**depends_on**](#servicesdependson): Der web-Service hängt vom db-Service
+    ab.
+  - [**environment**](#servicesenvironment): Umgebungsvariablen werden für die
+    Konfiguration der Services gesetzt.
+  - [**healthcheck**](#serviceshealthcheck): Ein Gesundheitscheck für den
     web-Service, um sicherzustellen, dass er ordnungsgemäss funktioniert.
-  - [**labels**](#28-serviceslabels): Metadaten für den web-Service.
-  - [**ports**](#24-servicesports): Der web-Service leitet Port 80 des Hosts auf
+  - [**labels**](#serviceslabels): Metadaten für den web-Service.
+  - [**ports**](#servicesports): Der web-Service leitet Port 80 des Hosts auf
     Port 80 des Containers weiter.
-  - [**restart**](#26-servicesrestart): Der web-Service wird immer neu
-    gestartet, wenn er stoppt.
-  - [**volumes**](#25-servicesvolumes): Beide Services verwenden Volumes für die
+  - [**restart**](#servicesrestart): Der web-Service wird immer neu gestartet,
+    wenn er stoppt.
+  - [**volumes**](#servicesvolumes): Beide Services verwenden Volumes für die
     Datenpersistenz.
-  - [**deploy**](#27-servicesdeploy): Bereitstellungsoptionen für den
-    db-Service, einschliesslich Ressourcenlimits.
+  - [**deploy**](#servicesdeploy): Bereitstellungsoptionen für den db-Service,
+    einschliesslich Ressourcenlimits.
 - [**networks**](#3-networks): Definiert ein benutzerdefiniertes Netzwerk.
 - [**configs**](#5-configs): Definiert eine Konfiguration, die in den Services
   verwendet werden kann.
@@ -172,7 +176,7 @@ services:
 
 - https://docs.docker.com/reference/compose-file/services/
 
-#### 2.1. services.build
+#### services.build
 
 Gibt an, wie ein Docker-Image aus einem Dockerfile erstellt werden soll. Hier
 können Sie den Kontext (Verzeichnis) und andere Build-Optionen wie
@@ -192,7 +196,14 @@ services:
 
 - https://docs.docker.com/reference/compose-file/services/#build
 
-#### 2.2 services.depends_on
+#### services.container_name
+
+Der Container Name vom gestarteten Container. Wenn leergelassen, wird
+automatisch der Servicename verwendet.
+
+- Der Container Name ist automatisch auch der **DNS Name** vom Container.
+
+#### services.depends_on
 
 Gibt an, dass ein Service von einem oder mehreren anderen Services abhängt. Dies
 stellt sicher, dass die abhängigen Services in der richtigen Reihenfolge
@@ -213,7 +224,7 @@ services:
 
 - https://docs.docker.com/reference/compose-file/services/#depends_on
 
-#### 2.3. services.environment
+#### services.environment
 
 Ermöglicht das Setzen von Umgebungsvariablen für einen Service. Diese Variablen
 können in der Anwendung verwendet werden, um Konfigurationen oder sensible Daten
@@ -231,7 +242,7 @@ services:
 
 - https://docs.docker.com/reference/compose-file/services/#environment
 
-#### 2.4. services.ports
+#### services.ports
 
 Definiert die Portweiterleitungen zwischen dem Host und dem Container. Dies
 ermöglicht den Zugriff auf die Dienste, die in den Containern laufen, von
@@ -248,7 +259,7 @@ services:
 
 - https://docs.docker.com/reference/compose-file/services/#ports
 
-#### 2.5. services.volumes
+#### services.volumes
 
 Definiert, welche Volumes in einem bestimmten Service verwendet werden sollen.
 Dies ermöglicht die Persistenz von Daten und den Austausch von Daten zwischen
@@ -265,7 +276,7 @@ services:
 
 - https://docs.docker.com/reference/compose-file/services/#volumes
 
-#### 2.6. services.restart
+#### services.restart
 
 Gibt die Restart-Politik für einen Service an. Dies kann nützlich sein, um
 sicherzustellen, dass Container bei einem Fehler oder nach einem Neustart des
@@ -292,7 +303,7 @@ services:
 
 - https://docs.docker.com/reference/compose-file/services/#restart
 
-#### 2.6. services.healthcheck
+#### services.healthcheck
 
 Definiert einen Gesundheitscheck für einen Service, um sicherzustellen, dass der
 Container ordnungsgemäss funktioniert. Docker kann dann entscheiden, ob der
@@ -312,7 +323,7 @@ services:
 
 - https://docs.docker.com/reference/compose-file/services/#healthcheck
 
-#### 2.7. services.deploy
+#### services.deploy
 
 Definiert Bereitstellungsoptionen für Services, **insbesondere in einem
 Swarm-Cluster**. Hier können Sie Einstellungen wie Replikate, Ressourcenlimits
@@ -333,7 +344,7 @@ services:
 
 - https://docs.docker.com/reference/compose-file/services/#deploy
 
-#### 2.8. services.labels
+#### services.labels
 
 Ermöglicht das Hinzufügen von Metadaten zu einem Service oder Container in Form
 von Schlüssel-Wert-Paaren. Labels können für die Organisation, das Management
