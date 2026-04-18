@@ -38,7 +38,7 @@ Docker-Compose-Umgebung im Terminal wieder stoppen.
 
 :::info
 
-- Docker Compose werden wir **in der vierten Woche** genauer betrachten.
+- Docker Compose werden wir **in der sechsten Woche** genauer betrachten.
 
 :::
 
