@@ -3,7 +3,7 @@ marp: true
 theme: bbzbl
 paginate: true
 header: Modul 169 - Grundlagen
-footer: BBZBL / Lukas Hodel / Services mit Containern bereitstellen
+footer: BBZBL / Lukas Hodel / Michael Salm / Services mit Containern bereitstellen
 ---
 
 <!-- _class: big center -->
@@ -45,7 +45,7 @@ footer: BBZBL / Lukas Hodel / Services mit Containern bereitstellen
 
 # Modulwebseite
 
-- [Webseite](https://herrhodel.github.io/modul-169-website/docs)
+- [Webseite](https://michisalm.github.io/modul-169-website/docs)
 
 - [Übungs Repository](https://github.com/herrhodel/modul-169-exercises)
 
@@ -53,8 +53,7 @@ footer: BBZBL / Lukas Hodel / Services mit Containern bereitstellen
 
 # 🚧 <br/> Modul ist aktiv in Bearbeitung!
 
-- Ich werde jede Woche das Modul erweitern, die Webseite ist noch nicht 100%
-  final!
+- Es ist möglich, dass die Modulwebseite leichte Änderungen erfährt.
 
 ---
 
@@ -97,73 +96,9 @@ Alle Themen vom Modul
 
 ---
 
-<!-- _class: big center -->
-
-# Regeln 👮‍♀️
-
-## _INP24C_ spezial
-
----
-
-# §1 Fokus und Geräte
-
-::: columns
-
-Die **digitalen Geräte**: 📱, 💻, etc.
-
-- immer nur auf **Aufforderung der Lehrkraft**
-- immer nur zur **Bearbeitung der gestellten Aufgaben**
-
-**Private Aktivitäten sind untersagt**: _unter anderem Social Media, Spiele,
-Videos, private E-Mails/Chats, Surfen, Shoppen, etc._
-
-::: split s1
-
-### 1. Verwarnung
-
-- **Mündliche** Ermahnung durch Lehrperson
-
-### 2. Verwarnung
-
-- 👨‍🏫 Das Gerät ist für den **Rest der Lektion bei der Lehrperson** zu
-  hinterlegen.
-- 🚨 **Absenz**, wenn dadurch nicht gearbeitet werden kann!
-- 🗣️ **Meldung an den Berufsbildner**.
-
-:::
-
----
-
-# §2 Ruhe und Umgangsformen
-
-::: columns
-
-Die Konzentration der Mitschüler muss gewährleistet sein.
-
-- **Lärm ist zu vermeiden**<br/> z.B. laute Gespräche, Geräusche, Rufen.
-
-- **Freundlicher, höflicher und respektvoller** Umgangston
-
-::: split s1
-
-### 1. Verwarnung
-
-- **Mündliche** Ermahnung durch Lehrperson.
-- Evtl. auf separaten Arbeitsplatz versetzen.
-
-### 2. Verwarnung
-
-- 🚪 Für den Rest der Lektion **aus dem Unterricht gewiesen**.
-- 🚨 Die gesamte Lektion gilt als **Absenz**.
-- 🗣️ **Meldung an den Berufsbildner**.
-
-:::
-
----
-
 # Bei Fragen
 
-- Mich persönlich kontaktieren per Mail
+- Mich persönlich kontaktieren per Mail oder Google Chat.
 
 ---
 
@@ -207,7 +142,7 @@ Die Konzentration der Mitschüler muss gewährleistet sein.
 
 Lesen Sie auf der Modulwebseite Woche 1
 
-- [Grundlagen der Virtualisierung](https://herrhodel.github.io/modul-169-website/docs/woche01/grundlagen)
+- [Grundlagen der Virtualisierung](https://michisalm.github.io/modul-169-website/docs/woche01/grundlagen)
 
 ::: split
 
@@ -254,7 +189,7 @@ Lesen Sie auf der Modulwebseite Woche 1
 
 Lesen Sie auf der Modulwebseite Woche 1
 
-- [Container Bausteine](https://herrhodel.github.io/modul-169-website/docs/woche01/container-linux-opt)
+- [Container Bausteine](https://michisalm.github.io/modul-169-website/docs/woche01/container-linux-opt)
 
 ::: split
 
@@ -271,7 +206,7 @@ Lesen Sie auf der Modulwebseite Woche 1
 
 Lesen Sie auf der Modulwebseite Woche 1
 
-- [Grundkonzepte von Docker](https://herrhodel.github.io/modul-169-website/docs/woche01/docker-grundlagen)
+- [Grundkonzepte von Docker](https://michisalm.github.io/modul-169-website/docs/woche01/docker-grundlagen)
 
 ::: split
 
@@ -300,12 +235,12 @@ Lesen Sie auf der Modulwebseite Woche 1
 
 Installieren Sie Docker Desktop oder Docker gemäss Anleitung der Modulwebseite.
 
-- [Docker Installation](https://herrhodel.github.io/modul-169-website/docs/woche01/uebungen/aufgabe-docker-install)
+- [Docker Installation](https://michisalm.github.io/modul-169-website/docs/woche01/uebungen/aufgabe-docker-install)
 
 Lösen Sie Übungen zu den Themen
 
-- [Docker CLI](https://herrhodel.github.io/modul-169-website/docs/woche01/uebungen/aufgabe-docker-cli)
-- [Docker Desktop](https://herrhodel.github.io/modul-169-website/docs/woche01/uebungen/aufgabe-docker-desktop)
+- [Docker CLI](https://michisalm.github.io/modul-169-website/docs/woche01/uebungen/aufgabe-docker-cli)
+- [Docker Desktop](https://michisalm.github.io/modul-169-website/docs/woche01/uebungen/aufgabe-docker-desktop)
 
 ::: split
 
@@ -322,7 +257,7 @@ Lösen Sie Übungen zu den Themen
 
 Lösen Sie Übungen zum Thema
 
-- [Praktische Anwendungen](https://herrhodel.github.io/modul-169-website/docs/woche01/uebungen/aufgabe-pratkische-andwendungen)
+- [Praktische Anwendungen](https://michisalm.github.io/modul-169-website/docs/woche01/uebungen/aufgabe-pratkische-andwendungen)
 
 ::: split
 
