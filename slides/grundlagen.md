@@ -65,7 +65,7 @@ footer: BBZBL / Lukas Hodel / Michael Salm / Services mit Containern bereitstell
 
 Theoretische Grundlagen von Container
 
-- **Wann**: Woche 4
+- **Wann**: Woche 5
 
 - **Gewichtung**: 50%
 
