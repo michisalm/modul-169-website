@@ -54,6 +54,6 @@ sidebar_label: 🏠 Modul 169
 
 ## Recherche
 
-- Mastodon [linux-de.com](https://linux-de.com/?p=12511)
+<!-- - Mastodon [linux-de.com](https://linux-de.com/?p=12511)  Der Link funktioniert nicht mehr. -->
 - Appls
   [github.com](https://github.com/hotheadhacker/awesome-selfhost-docker?tab=readme-ov-file)
