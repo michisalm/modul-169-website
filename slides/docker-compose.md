@@ -139,9 +139,9 @@ Die Konzentration der Mitschüler muss gewährleistet sein.
 
 Lesen und Machen Sie die Übungen 7-9
 
-- [Übung 7: Docker Networking und DNS](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-07)
-- [Übung 8: MariaDB und phpMyAdmin im Docker-Netzwerk](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-08)
-- [Übung 9: Diagramme](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-09)
+- [Übung 7: Docker Networking und DNS](https://michisalm.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-07)
+- [Übung 8: MariaDB und phpMyAdmin im Docker-Netzwerk](https://michisalm.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-08)
+- [Übung 9: Diagramme](https://michisalm.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-09)
 
 ::: split
 
@@ -164,7 +164,7 @@ Lesen und Machen Sie die Übungen 7-9
 
 Lesen Sie das Kapitel "Docker Compose"
 
-- [Docker Compose](https://herrhodel.github.io/modul-169-website/docs/woche06/docker-compose)
+- [Docker Compose](https://michisalm.github.io/modul-169-website/docs/woche06/docker-compose)
 
 ::: split
 
@@ -177,7 +177,7 @@ Lesen Sie das Kapitel "Docker Compose"
 
 # Demo Aufgabe "start"
 
-- [Aufgabe Start](https://herrhodel.github.io/modul-169-website/docs/woche06/aufgaben/aufgabe-compose-00)
+- [Aufgabe Start](https://michisalm.github.io/modul-169-website/docs/woche06/aufgaben/aufgabe-compose-00)
 
 ---
 

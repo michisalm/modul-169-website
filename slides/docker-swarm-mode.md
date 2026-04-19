@@ -197,7 +197,7 @@ services:
 
 Zusammen erarbeiten wir die Aufgabe "Docker Voting App"
 
-- [Docker Voting App](https://herrhodel.github.io/modul-169-website/docs/woche08/docker-voting-app)
+- [Docker Voting App](https://michisalm.github.io/modul-169-website/docs/woche08/docker-voting-app)
 
 ::: split
 
@@ -421,7 +421,7 @@ secrets:
 
 Lesen Sie "Docker Security" von der Woche 8
 
-- [Docker Security](https://herrhodel.github.io/modul-169-website/docs/woche08/docker-security)
+- [Docker Security](https://michisalm.github.io/modul-169-website/docs/woche08/docker-security)
 
 ::: split
 

@@ -185,7 +185,7 @@ docker network rm my-network
 
 Lesen Sie das Kapitel "Docker Network"
 
-- [Docker Network](https://herrhodel.github.io/modul-169-website/docs/woche05/docker-network)
+- [Docker Network](https://michisalm.github.io/modul-169-website/docs/woche05/docker-network)
 
 ::: split
 
@@ -202,7 +202,7 @@ Lesen Sie das Kapitel "Docker Network"
 
 Lesen und Machen Sie die Übung 6: Netzwerk Grundlagen
 
-- [Übung 6: Netzwerk Grundlagen](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-network-06)
+- [Übung 6: Netzwerk Grundlagen](https://michisalm.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-network-06)
 
 ::: split
 
@@ -263,9 +263,9 @@ Lesen und Machen Sie die Übung 6: Netzwerk Grundlagen
 
 Lesen und Machen Sie die Übungen 7-9
 
-- [Übung 7: Docker Networking und DNS](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-07)
-- [Übung 8: MariaDB und phpMyAdmin im Docker-Netzwerk](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-08)
-- [Übung 9: Diagramme](https://herrhodel.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-09)
+- [Übung 7: Docker Networking und DNS](https://michisalm.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-07)
+- [Übung 8: MariaDB und phpMyAdmin im Docker-Netzwerk](https://michisalm.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-08)
+- [Übung 9: Diagramme](https://michisalm.github.io/modul-169-website/docs/woche05/uebungen-network/aufgabe-networks-09)
 
 ::: split
 

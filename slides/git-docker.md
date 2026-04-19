@@ -78,7 +78,7 @@ footer: BBZBL / Lukas Hodel / Services mit Containern bereitstellen
 
 Lesen Sie das Kapitel "Git"
 
-- [Git Start](https://herrhodel.github.io/modul-169-website/docs/woche02/git)
+- [Git Start](https://michisalm.github.io/modul-169-website/docs/woche02/git)
 
 ::: split
 
@@ -106,7 +106,7 @@ Lesen Sie das Kapitel "Git"
 
 Machen Sie die Übung "Git: Start".
 
-- [Git Start](https://herrhodel.github.io/modul-169-website/docs/woche02/uebungen/aufgabe-git)
+- [Git Start](https://michisalm.github.io/modul-169-website/docs/woche02/uebungen/aufgabe-git)
 
 ::: split
 
@@ -129,7 +129,7 @@ Machen Sie die Übung "Git: Start".
 
 Lesen und Machen Sie die Übung "Git: Übungs-Repository".
 
-- [Git: Übungs-Repository](https://herrhodel.github.io/modul-169-website/docs/woche02/uebungen/aufgabe-git-clone)
+- [Git: Übungs-Repository](https://michisalm.github.io/modul-169-website/docs/woche02/uebungen/aufgabe-git-clone)
 
 ::: split
 
@@ -196,9 +196,9 @@ docker build . -t webapp:1.12.5
 
 Lesen Sie auf der Modulwebseite Woche 2
 
-- [Docker Images](https://herrhodel.github.io/modul-169-website/docs/woche02/docker-images)
+- [Docker Images](https://michisalm.github.io/modul-169-website/docs/woche02/docker-images)
   - Bis und Mit
-    ["Dockerfile"](https://herrhodel.github.io/modul-169-website/docs/woche02/docker-images#dockerfile-1)
+    ["Dockerfile"](https://michisalm.github.io/modul-169-website/docs/woche02/docker-images#dockerfile-1)
 
 ::: split
 
@@ -220,7 +220,7 @@ Lesen Sie auf der Modulwebseite Woche 2
 ::: columns
 
 Machen Sie die
-[Übung 1](https://herrhodel.github.io/modul-169-website/docs/woche02/uebungen/aufgabe-einfaches-dockerfile)
+[Übung 1](https://michisalm.github.io/modul-169-website/docs/woche02/uebungen/aufgabe-einfaches-dockerfile)
 unter Einfaches Dockerfile.
 
 - Öffnen Sie den Ordner der Übung01
@@ -271,9 +271,9 @@ docker ps
 
 Lesen Sie auf der Modulwebseite Woche 2
 
-- [Image builden](https://herrhodel.github.io/modul-169-website/docs/woche02/docker-images#image-bilden)
-- [Caching beim Erstellen von Docker-Images](https://herrhodel.github.io/modul-169-website/docs/woche02/docker-images#caching-beim-erstellen-von-docker-images)
-- [Multistage Builds](https://herrhodel.github.io/modul-169-website/docs/woche02/docker-images#multistage-builds)
+- [Image builden](https://michisalm.github.io/modul-169-website/docs/woche02/docker-images#image-bilden)
+- [Caching beim Erstellen von Docker-Images](https://michisalm.github.io/modul-169-website/docs/woche02/docker-images#caching-beim-erstellen-von-docker-images)
+- [Multistage Builds](https://michisalm.github.io/modul-169-website/docs/woche02/docker-images#multistage-builds)
 
 ::: split
 
@@ -291,10 +291,10 @@ Lesen Sie auf der Modulwebseite Woche 2
 Lösen Sie die weiteren Aufgaben von "Einfaches Dockerfile" und **mindestens
 eine** von "Multistage Dockerfile".
 
-- [Einfaches Dockerfile](https://herrhodel.github.io/modul-169-website/docs/woche02/uebungen/aufgabe-einfaches-dockerfile)
+- [Einfaches Dockerfile](https://michisalm.github.io/modul-169-website/docs/woche02/uebungen/aufgabe-einfaches-dockerfile)
   - Übungen 1 - 10
 
-- [Multistage Dockerfile](https://herrhodel.github.io/modul-169-website/docs/woche02/uebungen/auftage-multistage-dockerfile)
+- [Multistage Dockerfile](https://michisalm.github.io/modul-169-website/docs/woche02/uebungen/auftage-multistage-dockerfile)
   - Übungen 11 - 12
 
 ::: split

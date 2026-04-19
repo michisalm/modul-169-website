@@ -100,11 +100,11 @@ Die Konzentration der Mitschüler muss gewährleistet sein.
 
 Lesen und Machen Sie die Übungen von Dieser Woche
 
-- [Starten von Images](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-00)
-- [Bind Mounts](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-01)
-- [Volumen](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-02)
-- [Netzwerk](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-03)
-- [Diagramm](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-04)
+- [Starten von Images](https://michisalm.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-00)
+- [Bind Mounts](https://michisalm.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-01)
+- [Volumen](https://michisalm.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-02)
+- [Netzwerk](https://michisalm.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-03)
+- [Diagramm](https://michisalm.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-04)
 
 ::: split
 
@@ -121,11 +121,11 @@ Lesen und Machen Sie die Übungen von Dieser Woche
 
 Lesen und Machen Sie die Übungen von **letzer** Woche
 
-- [Starten von Images](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-00)
-- [Bind Mounts](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-01)
-- [Volumen](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-02)
-- [Netzwerk](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-03)
-- [Diagramm](https://herrhodel.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-04)
+- [Starten von Images](https://michisalm.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-00)
+- [Bind Mounts](https://michisalm.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-01)
+- [Volumen](https://michisalm.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-02)
+- [Netzwerk](https://michisalm.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-03)
+- [Diagramm](https://michisalm.github.io/modul-169-website/docs/woche07/aufgaben/aufgabe-compose-new-04)
 
 ::: split
 
@@ -142,7 +142,7 @@ Lesen und Machen Sie die Übungen von **letzer** Woche
 
 Lesen und Machen Sie die Übungen 2-9 der Woche 06.
 
-- [Docker Compose Aufgaben Woche 06](https://herrhodel.github.io/modul-169-website/docs/woche06/aufgaben/)
+- [Docker Compose Aufgaben Woche 06](https://michisalm.github.io/modul-169-website/docs/woche06/aufgaben/)
 
 - Erstellen Sie je auch eine Visualisierung vom docker-compose File
 
