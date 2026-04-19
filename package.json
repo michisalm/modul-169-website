@@ -6,7 +6,7 @@
     "docusaurus": "docusaurus start --no-open --port 4000",
     "start": "wireit",
     "start:marp": "wireit",
-    "build": "docusaurus build",
+    "build": "cross-env DOCUSAURUS_IGNORE_SSG_WARNINGS=true docusaurus build",
     "build:marp": "marp --engine ./src/marp/async-engine.mjs --html --allow-local-files --theme slides/theme.css -I slides --output build/slides",
     "build:marp-pdf": "marp --engine ./src/marp/async-engine.mjs --html --allow-local-files --theme slides/theme.css -I slides --output build/slides --pdf --pdf-outlines --pdf-outlines.pages=false",
     "build:marp-copy-images": "cp -r slides/img build/slides/img",
@@ -73,6 +73,7 @@
     "@docusaurus/module-type-aliases": "^3.9.2",
     "@docusaurus/types": "^3.9.2",
     "@marp-team/marp-core": "^4.1.0",
+    "cross-env": "^10.1.0",
     "fs-extra": "^11.3.1"
   },
   "prettier": {

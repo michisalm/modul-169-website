@@ -126,11 +126,11 @@ const config = {
             type: "dropdown",
             label: "Referenzen",
             position: "left",
-            href: `/${modulConfig.repoName}/docs/category/referenzen`,
+            href: "",
             items: [
               {
                 label: "Dockerfile",
-                href: `/${modulConfig.repoName}/docs/woche01/docker-referenz`,
+                href: `/${modulConfig.repoName}/docs/woche02/docker-images#dockerfile-1`,
               },
               {
                 label: "Docker CLI",

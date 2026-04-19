@@ -109,9 +109,9 @@ secrets:
   (Postgres).
   - [**build**](#servicesbuild): Der web-Service wird aus einem Dockerfile im
     Verzeichnis ./web gebaut.
-  - [**container_name**](#servicescontainername): Der Container erhält den Namen
+  - [**container_name**](#servicescontainer_name): Der Container erhält den Namen
     "frontend". Dieser ist sogleich auch der DNS Name.
-  - [**depends_on**](#servicesdependson): Der web-Service hängt vom db-Service
+  - [**depends_on**](#servicesdepends_on): Der web-Service hängt vom db-Service
     ab.
   - [**environment**](#servicesenvironment): Umgebungsvariablen werden für die
     Konfiguration der Services gesetzt.
@@ -131,7 +131,7 @@ secrets:
   verwendet werden kann.
 - [**secrets**](#6-secrets): Definiert geheime Daten, die im db-Service
   verwendet werden.
-- [**volumes**](#4-volumeshttps): Definiert benannte Volumes für die Persistenz,
+- [**volumes**](#4-volumes): Definiert benannte Volumes für die Persistenz,
   welche von den Services gemountet werden.
 
 </div></div>

@@ -1,7 +1,7 @@
 # Ausschluss von Ordnern beim Bind Mount
 
 In Docker Compose können Sie mit
-[Bind Mounts](/docs/lektionen/woche03/docker-volume.md#bind-mounts)
+[Bind Mounts](/docs/woche03/docker-volume.md#bind-mounts)
 Verzeichnisse von Ihrem Host-System in Container einbinden. Manchmal möchten Sie
 jedoch bestimmte Ordner im Container ausschliessen, während Sie andere einbinden.
 Hier erfahren Sie, wie Sie dies erreichen können.
@@ -10,7 +10,7 @@ Hier erfahren Sie, wie Sie dies erreichen können.
 
 Um einen Ordner beim Bind Mount auszuschliessen, können Sie mehrere Mounts in
 Ihrer docker-compose.yml-Datei definieren. Wird ein Volume mount als Path
-definiert, ohne, dass ein Host pfad angegeben wird (das ":" fehlt), wird ein
+definiert, ohne, dass ein Hostpfad angegeben wird (das ":" fehlt), wird ein
 Pfad im container mit sich selbst referenziert. Dies hat den Effekt, dass dieser
 Pfad, ignoriert wird, wenn er ein Unterordner eines anderen Mounts ist.
 
@@ -33,9 +33,9 @@ volumes:
 - **Benanntes Volume**:
   - `todo_data:/etc/todos` speichert Daten, die zwischen Container-Neustarts
     persistent bleiben. Dies ist kein
-    [Mount Bind](/docs/lektionen/woche03/docker-volume.md#bind-mounts), sondern
+    [Mount Bind](/docs/woche03/docker-volume.md#bind-mounts), sondern
     ein
-    [Docker Volume](/docs/lektionen/woche03/docker-volume.md#docker-volumes).
+    [Docker Volume](/docs/woche03/docker-volume.md#docker-volumes).
 - **Bind Mount für node_modules**:
   - `/app/node_modules`: Stellt sicher, dass das node_modules-Verzeichnis im
     Container nicht mit dem Host synchronisiert wird, was Konflikte vermeidet.
