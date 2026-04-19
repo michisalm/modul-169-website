@@ -175,7 +175,7 @@ docker inpect <container_name>
 
 ### docker images
 
-Alle lokal verfügbare **Images anzeigen**.
+Alle lokal verfügbaren **Images** anzeigen.
 
 ```bash
 docker images
@@ -214,7 +214,7 @@ docker tag my-app:latest my-app:1.0
 
 ### docker image inspect
 
-Ein **Image Inspizieren**. Zeigt Informationen über die Metadaten, layer,
+Ein **Image inspizieren**. Zeigt Informationen über die Metadaten, layer,
 environment variablen, Netzwerke usw. an. Sehr nützlich um zu debuggen!
 
 ```bash
@@ -277,7 +277,7 @@ docker push <username>/<image_name>:<image_tag>
 ```
 
 ```bash title="Beispiel"
-docker push herrhodel/my-app:1.0
+docker push michisalm/my-app:1.0
 ```
 
 ## Netzwerkverwaltung
