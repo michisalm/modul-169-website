@@ -8,4 +8,4 @@ Den Aufbau einer Docker Compose Datei findet Ihr in der Referenz.
 
 :::
 
-::embed{url=https://github.com/herrhodel/modul-169-exercises/blob/main/05-compose-new/04-Diagramm/README.md}
+::embed{url=https://github.com/herrhodel/modul-169-exercises/blob/main/06-compose/04-diagramm/README.md}

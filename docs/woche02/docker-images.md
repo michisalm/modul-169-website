@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 ---
+
 # Docker Image
 
 Ein Docker-Image ist eine leichtgewichtige, ausführbare Softwareeinheit, die
@@ -412,19 +413,127 @@ hilft, die Effizienz zu steigern und die Zeit zu verkürzen, die benötigt wird,
 um ein Image zu erstellen. Wenn Sie verstehen, wie Caching funktioniert, können
 Sie Ihre Docker-Images schneller und effektiver erstellen.
 
+## Optimierung
+
+Es gibt mehrere Arten ein Image zu optimieren.
+
+### Wahl eines kleinen Base-Image `FROM`
+
+Jedes _Dockerfile_ startet mit dem Befehl `FROM`. Damit wird angegeben, welches
+das Basis-Image ist. Ist dieses bereits gross, kann das _Dockerfile_ nicht mehr
+allzu viel optimiert werden. Es ist zwar theoretisch möglich, viele Dateien und
+Programme durch `RUN` Befehle wieder zu deinstallieren, dies ist jedoch sehr
+aufwändig und unnötig.
+
+Dafür gibt es für die gängigsten Technologien bereits vorgefertigte Images. Dazu
+zählen:
+
+- Programmiersprachen: `node`, `python`, `ruby`, `java`...
+- Webserver: `nginx`, `apache`, `traefik`...
+- Datenbanken: `mysql`, `mariadb`, `postresql`...
+- Und weitere mehr!
+
+Schaut also immer zuerst, wenn z.B. eine Programmiersprache eingesetzt wird, ob
+nicht bereits ein Standardimage existiert, anstatt in ubuntu die Sprache manuell
+zu installieren?
+
+### So wenig Layer wie möglich generieren
+
+Unter [Caching](#caching-beim-erstellen-von-docker-images) wurde erläutert, dass
+ein Docker-Image für jeden Befehl (`FROM`, `COPY` aber auch `RUN`) einen _Layer_
+enthält. Das führt dazu, dass ein Image mit jedem Layer grösser wird. Ein
+Docker-Image kann also verkleinert werden, indem versucht wird, so wenig Befehle
+wie möglich zu verwenden.
+
+Die Befehle `FROM`, `WORKDIR`, `ENV`, `ARG`, `ENTRYPOINT`, `EXPOSE` und `CMD`
+können ausgeschlossen werden, da diese nicht zusammenfügbar sind.
+
+Die Befehle die zur Optimierung genau angeschaut werden sollten sind:
+
+#### COPY
+
+Mit dem `COPY` Befehl werden Dateien ins Image kopiert. Hier kann gespart
+werden, indem nur die Dateien kopiert werden, welche auch wirklich verwendet
+werden.
+
+Durch die Datei `.dockerignore` können, analog zu einer `.gitignore` Datei,
+ganze Ordner oder einzelne Dateien vom `COPY` Befehl ausgeschlossen werden.
+
+Auch kann ein `COPY` Befehl durch `*` mehrere Dateien gleichzeitig kopieren. So
+können potenziell mehrere `COPY` Befehle zu einem vereint werden.
+
+#### RUN
+
+Der `RUN` Befehl ist prädestiniert, um optimiert zu werden. Ein _Dockerfile_
+kann sehr schnell mehrere `RUN` Befehle enthalten.
+
+```dockerfile
+# ...
+RUN apt-get update
+RUN apt-get install -y curl
+RUN apt-get install -y nodejs
+RUN rm -rf /var/lib/apt/lists/*
+RUN curl -fsSL https://deb.nodesource.com | bash -
+# ...
+```
+
+Mehrere `RUN` Befehle können mit den Operatoren `&&` und `\` erreicht werden.
+
+- Der Operator `&&` bedeutet dass, wenn der rechte Befehl erfolgreich war,
+  direkt der linke Befehl ausgeführt werden soll.
+  - So lassen sich also mehrere Befehle zu einem `RUN` vereinen.
+- Der Operator `\` signalisiert _Bash_, dass der Zeilenumbruch nicht als das
+  Ende vom Befehl interpretiert werden soll. Damit können Bashbefehle auf
+  mehrere Zeilen geschrieben werden.
+  - Dies dient ausschliesslich der Lesbarkeit.
+
+Damit können die oberen 5 `RUN` Befehle in einen vereint werden:
+
+```dockerfile
+# ...
+RUN apt-get update \
+  && apt-get install -y curl \
+  && apt-get install -y nodejs \
+  && rm -rf /var/lib/apt/lists/* \
+  && curl -fsSL https://deb.nodesource.com | bash -
+# ...
+```
+
+:::tip
+
+Optimierung, egal in welcher Disziplin hat immer den Effekt, dass die
+Fehlersuche komplizierter wird. Daher empfehle ich diese Vorgehensweise:
+
+- Beim Erstellen vom _Dockerfile_ noch nicht Optimieren.
+- Viele Layer sind anfangs gut, da die einzelnen gecached werden!
+  - Wenn also einzelne Befehle angepasst werden, müssen die vorhergehenden
+    Befehle nicht mehr ausgeführt werden.
+- Erst wenn das _Dockerfile_ fertig ist und getestet wurde, kann es Optimiert
+  werden.
+- Zur nachträglichen Fehlersuche (Debugging), ist es sinnvoll, optimierte `RUN`
+  Befehle wieder aufzuteilen, damit besser sichtbar wird, welcher Befehl genau
+  das Problem verursacht.
+
+:::
+
+### Multistage Builds
+
+Eine weitere, sehr effektive Art zur Optimierung bietet der "Multistage" Build.
+Im nächsten Abschnitt wird darauf im Detail eingegangen.
+
 ## Multistage Builds
 
-Multistage Builds in *Dockerfiles* sind eine Technik, die es ermöglicht, mehrere
+Multistage Builds in _Dockerfiles_ sind eine Technik, die es ermöglicht, mehrere
 Schritte beim Erstellen eines Docker-Images zu kombinieren. Dadurch kann die
-Grösse des endgültigen Images reduziert und die Build-Zeit optimiert werden. Hier
-ist eine einfache Erklärung mit Beispielen:
+Grösse des endgültigen Images reduziert und die Build-Zeit optimiert werden.
+Hier ist eine einfache Erklärung mit Beispielen:
 
 ### Was sind Multistage Builds?
 
 Stellen Sie sich vor, Sie möchten eine Anwendung bauen, die aus mehreren Teilen
 besteht. Normalerweise würden Sie alle Abhängigkeiten und Tools in ein einziges
-Docker-Image packen. Das kann jedoch dazu führen, dass das Image sehr gross wird,
-weil viele Dinge, die nur während des Builds benötigt werden, auch im
+Docker-Image packen. Das kann jedoch dazu führen, dass das Image sehr gross
+wird, weil viele Dinge, die nur während des Builds benötigt werden, auch im
 endgültigen Image landen.
 
 Mit Multistage Builds können Sie verschiedene "Bauphasen" in einem Dockerfile
