@@ -1,6 +1,7 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
+
 # Docker Security
 
 Security ist ein wichtiges, jedoch auch schwieriges Thema. Es muss
@@ -10,7 +11,7 @@ deren Grundlage aufgebaut werden können.
 ## 1. Minimale, offizielle Images verwenden
 
 Verwende so kleine Basis-Images wie möglich (z. B. `node:alpine` oder
-distroless).
+"distroless").
 
 - **Vorteil**: Ein kleineres Image hat eine geringere Angriffsfläche, da
   unnötige Tools wie Shells, Paketmanager oder Editoren fehlen.
@@ -159,3 +160,10 @@ secrets:
   db_password:
     file: ./password.txt
 ```
+
+## Netzwerk
+
+Ein weiterer Aspekt der Security ist die Isolierung durch verschiedene
+Netzwerke. Darauf wird in der
+[Woche 05](/docs/woche05/docker-network.md#sicherheit-im-docker-networking)
+näher eingegangen.
