@@ -142,7 +142,7 @@ const config = {
               },
               {
                 label: "Docker Network",
-                href: `/${modulConfig.repoName}/docs/woche01/docker-referenz`,
+                href: `/${modulConfig.repoName}/docs/woche05/network-referenz`,
               },
               {
                 label: "Docker Compose",
