@@ -3,7 +3,7 @@ marp: true
 theme: bbzbl
 paginate: true
 header: Modul 169 - Git / Docker Images
-footer: BBZBL / Lukas Hodel / Abschlussprüfung
+footer: BBZBL / Lukas Hodel / Michael Salm / Abschlussprüfung
 ---
 
 <!-- _class: big center -->
