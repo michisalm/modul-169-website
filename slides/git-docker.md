@@ -134,7 +134,7 @@ Lesen und Machen Sie die Übung "Git: Übungs-Repository".
 ::: split
 
 - :dna: Einzelarbeit
-- :clock1: bis zur Grossen Pause
+- :clock1: 20'
 
 :::
 
