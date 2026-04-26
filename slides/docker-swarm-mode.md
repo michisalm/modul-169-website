@@ -164,8 +164,6 @@ Zusammen erarbeiten wir die Aufgabe "Docker Voting App"
 - :clock1: 20 min
 
 :::
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ---
 
@@ -407,7 +405,3 @@ wahl die Aufgaben sicherer zu machen.
 - :clock1: 15 min
 
 :::
-=======
->>>>>>> 8e48e38 (docs: woche04 security)
-=======
->>>>>>> 8e48e38 (docs: woche04 security)
