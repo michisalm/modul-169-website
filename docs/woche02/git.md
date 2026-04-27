@@ -24,7 +24,9 @@ Softwareentwicklung schnell zu einem Muss entwickelt hat. Da mit Git Änderungen
 an Projekten genauestens verfolgt werden können, ist es ein unverzichtbares Tool
 für Entwickler(innen), um ihre Projekte effizient zu verwalten. Damit es für
 alle, die in der Softwareentwicklung weiterkommen möchten, unverzichtbar, Git zu
-beherrschen. Was ist Versionskontrolle?
+beherrschen. 
+
+## Was ist Versionskontrolle?
 
 Versionskontrolle ermöglicht es dir, Änderungen am Quellcode einer Software zu
 verfolgen. Daher besteht jede gelieferte Softwareversion aus einer Reihe
