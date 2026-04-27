@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Woche 2
+# W2 - Git / Docker Images
 
 ## Ziel
 

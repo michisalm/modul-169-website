@@ -176,6 +176,8 @@ Lesen Sie auf der Modulwebseite Woche 3
 
 ---
 
+<!-- _class: auto-table-3 -->
+
 # Docker Volumes vs Bind Mounds
 
 | Merkmal      | Docker Volumes                                        | Bind Mounts                                                |

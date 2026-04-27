@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Woche 1
+# W1 - Grundlagen
 
 ## Ziel
 

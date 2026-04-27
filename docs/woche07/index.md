@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Woche 7
+# W7 - Docker Compose 2
 
 ## Ziel
 

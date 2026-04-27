@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Woche 8
+# W8 - Swarm Mode
 
 ## Ziel
 

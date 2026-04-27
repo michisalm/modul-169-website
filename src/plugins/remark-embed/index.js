@@ -95,7 +95,10 @@ function remarkEmbedPlugin() {
                 `Failed to fetch code from ${rawUrl}: ${response.statusText}`,
               );
             }
+            
             const codeContent = await response.text();
+            console.log("rawUrl", rawUrl);
+            console.log("content", codeContent);
             const lineContent = codeContent.split("\n");
             const path = url.split("#")[0];
             const hash = url.split("#")?.[1];

@@ -249,10 +249,7 @@ section.dark h2 {
 
 /* Tables */
 
-section.grid-table-3 {
-  /* table, thead, tbody { */
-  /*   width: 100%; */
-  /* } */
+section.table-3 {
   table {
     width: 100%;
     display: grid;
@@ -262,31 +259,57 @@ section.grid-table-3 {
   tbody,
   tr {
     display: contents; /* Makes the table rows part of the grid */
+    td {
+      font-size: 0.9rem;
+    }
+  }
+  thead,
+  tbody,
+  tr:nth-child(odd) td {
+    background-color: var(--bgColor-muted);
   }
   th {
     border-bottom: 2px solid var(--h1-color);
   }
 }
 
-/* variables */
+section.auto-table-3 {
+  table {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+  thead,
+  tbody,
+  tr {
+    display: contents; /* Makes the table rows part of the grid */
+    td {
+      font-size: 0.9rem;
+    }
+  }
+  thead,
+  tbody,
+  tr:nth-child(odd) td {
+    background-color: var(--bgColor-muted);
+  }
+  th {
+    border-bottom: 2px solid var(--h1-color);
+  }
+}
 
+/* variables - Base on following
+* - https://github.com/marp-team/marp-core/blob/main/themes/default.scss
+* - https://github.com/sindresorhus/github-markdown-css/blob/main/github-markdown.css
+*/
 section {
   --color-border-default: rgb(100, 100, 100);
   --header-footer-color: hsla(0, 0%, 20%, 0.65);
   --color-fg-blockquote: hsla(0, 0%, 10%, 0.9);
   --color-canvas-default: #fff;
+  --bgColor-muted: light-dark(#f6f8fa, #151b23);
   /* --h1-color: rgb(34, 68, 102); */
-  /* --h2-color: rgb(70, 70, 145) */
-  /* --h1-color: #3a0ca3; */
-  /* --h2-color: #7209b7; */
   /* --color-fg-strong: #f72585; */
-  /* --h1-color: #580c1f; */
   --h1-color: #580c1f;
-  /* --h1-color: #000; */
-  /* --h2-color: #a7333f; */
-  /* --color-fg-strong: #c52233; */
-  /* --h1-color-strong: #c52233; */
-  /* color:  #c52233 ; */
 }
 
 .__mermaid * {

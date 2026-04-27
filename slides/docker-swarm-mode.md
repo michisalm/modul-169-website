@@ -119,7 +119,7 @@ graph LR
 
 ---
 
-<!-- _class: grid-table-3 -->
+<!-- _class: auto-table-3 -->
 
 # Die Hautpunterschiede
 
