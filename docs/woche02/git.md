@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Git
 
+editiert auf GitHub
+
 Hier könnt Ihr nachlesen, was Git genau ist und wieso es so populär in der
 Softwareentwicklung geworden ist.
 
