@@ -271,7 +271,7 @@ cp ./solution/Dockerfile Dockerfile
 
 code Dockerfile # öffnet VS-Code
 
-docker buildx build -t uebung01 .
+docker build -t uebung01 .
 
 docker images
 

@@ -278,39 +278,13 @@ ein.
 Eingabeaufforderung) und navigieren Sie zu dem Verzeichnis, in dem sich Ihr
 Dockerfile befindet.
 
-### 3. BuildKit aktivieren (falls erforderlich)
+### 3. Docker-Image erstellen
 
-Stellen Sie sicher, dass BuildKit aktiviert ist, indem Sie die Umgebungsvariable
-`DOCKER_BUILDKIT=1` setzen. Dies kann in PowerShell oder der Eingabeaufforderung
-erfolgen:
-
-```bash
-set DOCKER_BUILDKIT=1
-```
-
-### 4. Docker Buildx aktivieren (falls erforderlich)
-
-Überprüfen Sie, ob Buildx verfügbar ist, indem Sie den folgenden Befehl
-ausführen:
-
-```bash
-docker buildx ls
-```
-
-Wenn kein Builder vorhanden ist, können Sie einen neuen Builder erstellen:
-
-```bash
-docker buildx create --name mybuilder
-docker buildx use mybuilder
-```
-
-### 5. Docker-Image erstellen
-
-Verwenden Sie den Befehl docker buildx build, um das Image zu erstellen. Der
+Verwenden Sie den Befehl `docker build`, um das Image zu erstellen. Der
 grundlegende Befehl hat die folgende Syntax:
 
 ```bash
-docker buildx build -t <image-name>:<tag> .
+docker build -t <image-name>:<tag> .
 ```
 
 - `<image-name>`: Geben Sie einen Namen für Ihr Image an.
@@ -321,10 +295,10 @@ docker buildx build -t <image-name>:<tag> .
 Beispiel:
 
 ```bash
-docker buildx build -t myapp:latest .
+docker build -t myapp:latest .
 ```
 
-### 6. Image überprüfen
+### 4. Image überprüfen
 
 Nach dem erfolgreichen Erstellen des Images können Sie die Liste der verfügbaren
 Docker-Images mit dem folgenden Befehl anzeigen:
@@ -333,7 +307,7 @@ Docker-Images mit dem folgenden Befehl anzeigen:
 docker images
 ```
 
-### 7. Container aus dem Image starten
+### 5. Container aus dem Image starten
 
 Um einen Container aus dem erstellten Image zu starten, verwenden Sie den Befehl
 `docker run`:
@@ -357,16 +331,13 @@ docker run -d -p 5000:5000 myapp:latest
 1. Erstellen Sie ein Dockerfile mit den gewünschten Anweisungen.
 2. Öffnen Sie ein Terminal und navigieren Sie zum Verzeichnis mit dem
    Dockerfile.
-3. Aktivieren Sie BuildKit mit `set DOCKER_BUILDKIT=1`.
-4. Überprüfen Sie Buildx mit `docker buildx ls` und erstellen Sie einen neuen
-   Builder, falls erforderlich.
-5. Führen Sie docker `buildx build -t <image-name>:<tag> .` aus, um das Image zu
+3. Führen Sie `docker build -t <image-name>:<tag> .` aus, um das Image zu
    erstellen.
-6. Überprüfen Sie das Image mit `docker images`.
-7. Starten Sie einen Container mit `docker run`.
+4. Überprüfen Sie das Image mit `docker images`.
+5. Starten Sie einen Container mit `docker run`.
 
-Mit diesen Schritten können Sie ein Docker-Image mit docker buildx build
-erstellen und einen Container basierend auf diesem Image ausführen.
+Mit diesen Schritten können Sie ein Docker-Image mit `docker build` erstellen
+und einen Container basierend auf diesem Image ausführen.
 
 ## Caching beim Erstellen von Docker-Images
 
