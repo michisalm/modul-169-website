@@ -88,6 +88,12 @@ docker swarm ca --rotate
 docker stack deploy --compose-file docker-stack.yml vote
 ```
 
+**Erklärungen**
+- **docker stack deploy**: Stack auf dem Swarm erstellen oder aktualisieren
+- **--compose-file docker-stack.yml**: Zu verwendene Stack-Datei festlegen
+- **vote**: Stack-Name, Präfix für alle Ressourcen: vote_redis, vote_result, vote_vote, vote_worker
+
+
 16. Die Services auflisten
 
 ```bash
@@ -104,8 +110,10 @@ docker run -it -d -p 8088:8080 -v /var/run/docker.sock:/var/run/docker.sock dock
 18. Den Service skalieren (Mehr Containers pro Service)
 
 ```bash
-docker service scale vote=30
+docker service scale vote_vote=30
 ```
+
+Es muss **vote_**vote heissen wegen dem Namen resp. Präfix des Docker Stacks (siehe 15.).
 
 19. Der Manager macht ein anderen Node zum Manager
 
@@ -116,7 +124,10 @@ docker swarm join-token manager
 
 Der Output ist wieder ein `docker join ...` Befehl. Diesen mehreren Lernenden
 versenden. Diese müssen den Befehl ausführen damit Sie als Manager Node
-fungieren.
+fungieren. Achtung: zuerst den Swarm verlassen mit `docker swarm leave`.
+
+Alternativ kann der Manager einen Worker direkt zu einem weiteren Manager befördern:
+`docker node promote worker1` (`docker node demote worker1`)
 
 ### Wieder auf allen Maschinen
 

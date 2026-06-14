@@ -20,6 +20,8 @@ footer: BBZBL / Lukas Hodel / Michael Salm / Services mit Containern bereitstell
 
 - **Repetition**
 - **Von Compose zu Swarm Mode**
+- **Testlauf LB2** (Kurzversion)
+- **Fragen LB2 & individuelle Repetion**
 
 :::
 
